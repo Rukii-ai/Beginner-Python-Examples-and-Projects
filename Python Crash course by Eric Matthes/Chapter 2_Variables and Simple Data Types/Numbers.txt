@@ -1,0 +1,54 @@
+
+3^5 is not equal to 3**5.
+3**5 is exponential in python
+3^5 is bitwise XOR in python and outputs 6
+
+
+
+
+
+Python stores decimals in **binary floating-point**, not exact decimal.
+Some numbers **can be represented exactly in binary**, others **cannot**.
+
+# 🔍 **Case 1 → `0.9 + 2.3` → why 3.1999999999999997?**
+### ❗ 0.9 cannot be represented exactly in binary
+
+It becomes something like:
+0.9  ≈ 0.9000000000000000222 (binary approximation)
+2.3 ≈ 2.2999999999999998223
+
+0.9000000000000000222 + 2.2999999999999998223 = 3.1999999999999998445
+Python shows this as: 3.1999999999999997
+So the tiny error comes from the binary approximation.
+
+# 🔍 **Case 2 → `0.2 + 0.2` → why exactly 0.4?**
+Even though **0.2 also cannot be represented exactly**, the approximations are such that the rounding produces a *clean* decimal when printed.
+### Example:
+0.2 ≈ 0.2000000000000000111
+Adding them
+0.4000000000000000222
+
+This rounds to **0.4** when Python prints it, because the rounding threshold makes it look exact.
+So the result is not truly exact — it only *appears* exact.
+
+You can verify:
+python
+print(repr(0.2 + 0.2))
+
+
+You'll get something like:
+0.4000000000000001
+
+# 🧠 **Why Python prints some errors but hides others**
+Python prints numbers in a user-friendly way:
+* If a number can be rounded to a short, clean decimal → ✔️ print clean version
+* If rounding would change the meaning → ❗ show the long version
+So:
+* `0.4` is safe to round → show `0.4`
+* `3.1999999999999997` is too far from `3.2` → show the real value
+
+# ✔️ **If you want exact decimals**
+Use `Decimal` from the `decimal` module:
+```python
+from decimal import Decimal
+print(Decimal("0.9") + Decimal("2.3"))
