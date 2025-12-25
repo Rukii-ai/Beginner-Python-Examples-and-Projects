@@ -44,7 +44,8 @@ print(f"Here is the original list again: \n\t{cars}")
 """
 To reverse the original order of a list, you can use the
  reverse() method. reverse() doesn’t sort backward alphabetically;
- it simply reverses the order of the list.  The reverse() method changes the order of a list
+ it simply reverses the order of the list.  The reverse() method changes 
+ the order of a list
  permanently, but you can revert to the original order
  anytime by applying reverse() to the same list a second
  time.
