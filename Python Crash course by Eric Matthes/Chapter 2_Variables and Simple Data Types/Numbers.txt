@@ -22,13 +22,15 @@ Python shows this as: 3.1999999999999997
 So the tiny error comes from the binary approximation.
 
 # 🔍 **Case 2 → `0.2 + 0.2` → why exactly 0.4?**
-Even though **0.2 also cannot be represented exactly**, the approximations are such that the rounding produces a *clean* decimal when printed.
+Even though **0.2 also cannot be represented exactly**, the approximations 
+are such that the rounding produces a *clean* decimal when printed.
 ### Example:
 0.2 ≈ 0.2000000000000000111
 Adding them
 0.4000000000000000222
 
-This rounds to **0.4** when Python prints it, because the rounding threshold makes it look exact.
+This rounds to **0.4** when Python prints it, because the rounding 
+threshold makes it look exact.
 So the result is not truly exact — it only *appears* exact.
 
 You can verify:

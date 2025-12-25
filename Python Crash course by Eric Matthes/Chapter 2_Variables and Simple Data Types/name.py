@@ -5,7 +5,8 @@ print(name.lower())
 
 """A method is a function that is associated with a particular object. 
 In this case, the object is name, which is a string, and the method is title(). 
-The title() method returns a version of the string where the first letter of each word is capitalized.
+The title() method returns a version of the string where the first letter 
+of each word is capitalized.
  A method is an action that
  Python can perform on a piece of data. The dot (.) after name
  in name.title() tells Python to make the title() method act
