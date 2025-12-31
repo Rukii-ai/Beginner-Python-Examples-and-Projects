@@ -1,4 +1,4 @@
-def make_album(artist_name, album_title, number_of_songs = None):
+def make_album(artist_name, album_title, number_of_songs=None):
     """Return a dictionary representing a music album."""
     album = {'Artist' : artist_name.title(), 'Title' : album_title.title()}
     if number_of_songs:

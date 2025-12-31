@@ -34,6 +34,7 @@ summarize the prints that have been made
 unprinted_designs = ["phone case", "robot pendant", "dodecahedron"]
 completed_models = []
 
+
 def print_model(designs, models):
     """Accepts a list of unprinted model names and prints them"""
     while designs:

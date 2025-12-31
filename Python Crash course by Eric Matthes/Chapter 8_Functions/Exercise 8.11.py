@@ -5,6 +5,7 @@ short_messages = ["Hello, world!",
             "Be kind."]
 sent_messages = []
 
+
 def sending_messages(messages_not_sent, messages_sent):
     """Receives a list of messages and prints them individually"""
     

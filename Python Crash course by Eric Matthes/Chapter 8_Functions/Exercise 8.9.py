@@ -4,9 +4,11 @@ short_messages = ["Hello, world!",
             "Today is a good day.",
             "Be kind."]
 
+
 def show_messages(messages):
     """Receives a list of messages and prints them individually"""
     for message in messages:
         print(f"{message}")
+
 
 show_messages(short_messages)

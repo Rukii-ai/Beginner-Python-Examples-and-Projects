@@ -4,6 +4,7 @@ including more complicated data structures like lists and
 dictionaries.
 """
 
+
 def build_person(first_name, last_name):
     """Return a dictionary of information about a person."""
     person = {'first': first_name, 'last': last_name}
@@ -20,13 +21,12 @@ def build_person_2(first_name, last_name):
     person['last'] = last_name
     return person
 
+
 musician = build_person_2('jimi', 'hendrix')
 print(musician)
 
 
-
-
-first_names =['jimi', 'john', 'miles', 'charlie', 'dizzy', 'thelonious']
+first_names = ['jimi', 'john', 'miles', 'charlie', 'dizzy', 'thelonious']
 last_names = ['hendrix', 'hooker', 'davis', 'parker', 'gillespie', 'monk']
 
 """
