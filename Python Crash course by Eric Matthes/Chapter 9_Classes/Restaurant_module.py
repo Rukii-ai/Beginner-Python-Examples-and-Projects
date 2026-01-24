@@ -1,3 +1,5 @@
+"""A class used to represent a restaurant"""
+
 class Restaurant:
     """A class of Restaurants and the food they serve"""
 
