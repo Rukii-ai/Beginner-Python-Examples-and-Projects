@@ -1,4 +1,4 @@
-from Restaurant_module import Restaurant as RS
+from restaurant_module import Restaurant as RS
 
 fav_restaurant = RS("The Culinary Spot", "fusion cuisine")
 print(fav_restaurant.restaurant_name)

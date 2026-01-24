@@ -1,4 +1,4 @@
-import Admin_module as am
+import admin_module as am
 
 admin_user = am.Admin('john_doe', 'johnson', location='USA', age="35",
                       years_of_experience="10")
