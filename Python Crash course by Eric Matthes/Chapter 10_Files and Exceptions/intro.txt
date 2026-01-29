@@ -1,0 +1,45 @@
+An incredible amount of data is available in text files. 
+
+Text files can contain weather data, traffic data, socioeconomic
+data, literary works, and more. 
+
+Reading from a file is
+particularly useful in data analysis applications, but it’s also
+applicable to any situation in which you want to analyze or
+modify information stored in a file. 
+
+For example, you can
+write a program that reads in the contents of a text file and
+rewrites the file with formatting that allows a browser to
+display it.
+
+When you want to work with the information in a text file,
+the first step is to read the file into memory. You can then
+work through all of the file’s contents at once or work
+through the contents line by line
+
+To work with the contents of a file, we need to tell Python
+the path to the file. 
+
+A path is the exact location of a file or
+folder on a system. 
+
+Python provides a module called pathlib
+that makes it easier to work with files and directories, no
+matter which operating system you or your program’s users
+are working with. 
+
+A module that provides specific
+functionality like this is often called a library, hence the
+name pathlib
+
+VS Code looks for files in the folder that was most
+recently opened. 
+
+If you’re using VS Code, start by
+opening the folder where you’re storing this chapter’s
+programs. 
+
+For example, if you’re saving your program
+f iles in a folder called chapter_10, press CTRL-O (⌘-O
+on macOS), and open that folder.
