@@ -1,0 +1,56 @@
+When you write a function or a class, you can also write tests
+for that code. Testing proves that your code works as it’s
+supposed to in response to all the kinds of input it’s designed
+to receive. 
+
+When you write tests, you can be confident that
+your code will work correctly as more people begin to use your
+programs. You’ll also be able to test new code as you add it, to make sure
+your changes don’t break your program’s existing behavior. 
+
+Every programmer makes mistakes, so every programmer
+must test their code often, to catch problems before users encounter them.
+
+While Python includes a lot of functionality in the standard
+library, Python developers also depend heavily on third
+party packages. 
+
+A third-party package is a library that’s
+developed outside the core Python language. Some popular
+third-party libraries are eventually adopted into the
+standard library, and end up being included in most Python
+installations from that point forward. 
+
+This happens most
+often with libraries that are unlikely to change much once
+they’ve had their initial bugs worked out. These kinds of
+libraries can evolve at the same pace as the overall
+language.
+
+Many packages, however, are kept out of the standard
+library so they can be developed on a timeline independent
+of the language itself. 
+
+These packages tend to be updated
+more frequently than they would be if they were tied to
+Python’s development schedule. 
+
+This is true of pytest and
+most of the libraries we’ll use in the second half of this
+book. 
+
+You shouldn’t blindly trust every third-party package,
+but you also shouldn’t be put off by the fact that a lot of
+important functionality is implemented through such
+packages.
+
+Python includes a tool called pip that’s used to install third
+party packages. Because pip helps install packages from
+external resources, it’s updated often to address potential
+security issues. So, we’ll start by updating pip.
+
+To update any third party package, we use:
+$ python -m pip install --upgrade package_name
+
+If you’re using Linux, pip may not be included with
+your installation of Python. 
